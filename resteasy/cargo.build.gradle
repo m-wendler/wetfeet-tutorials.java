@@ -1,0 +1,33 @@
+apply plugin: 'java'
+apply plugin: 'cargo'
+apply plugin: 'war'
+
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {		
+	cargo 'org.codehaus.cargo:cargo-core:1.4.5',
+	      'org.codehaus.cargo:cargo-ant:1.4.5'
+}
+
+buildscript {
+	repositories {
+		mavenCentral ()
+	}	
+	
+	dependencies {
+		classpath 'org.gradle.api.plugins:gradle-cargo-plugin:0.6.1'
+	}
+}
+
+cargo {
+	containerId	= 'tomcat7x'
+	port = 8080
+	
+	local {
+		homeDir = file ('M:/usr/bin/sy/tomcat/7.0.28')
+	}	
+}
+

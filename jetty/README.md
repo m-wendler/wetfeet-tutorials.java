@@ -19,6 +19,7 @@ are being taken care of automatically (no need to download / install anything ma
 ### run the demo
 
 * clone this repo
+* `cd <repo-directory>/jetty`
 * (**optional**) set the system properties:
 	* `portNr`: the port to listen on (e.g. `8111`)  
 in the `src\main\resources\jetty.properties` file

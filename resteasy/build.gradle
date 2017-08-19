@@ -1,0 +1,44 @@
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'eclipse-wtp'
+apply plugin: 'war'
+apply plugin: 'application'
+
+sourceCompatibility = 1.7
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+	compile 'javax.ws.rs:javax.ws.rs-api:2.0'
+	
+	compile 'org.jboss.resteasy:resteasy-jaxrs-all:3.0.4.Final'
+	compile 'org.jboss.resteasy:resteasy-servlet-initializer:3.0.4.Final'
+
+		
+	testCompile 'junit:junit:4.+'
+
+	// the sun http server bridge
+	testCompile 'org.jboss.resteasy:resteasy-jdk-http:3.0.4.Final'
+	
+	// jetty as an alternative embedded web server
+	testCompile ('org.eclipse.jetty:jetty-distribution:9.1.0.v20131115') {
+		exclude module: 'test-jetty-webapp'
+		exclude module: 'test-proxy-webapp'
+	}
+		
+	// servlet api required to RUN the tests		
+	testRuntime 'javax.servlet:javax.servlet-api:3.0.1'
+}
+
+mainClassName = 'wetfeet.resteasy.ResteasyDemo'
+
+// instructions for the war building
+war {
+	webInf {
+		from 'WebContent/WEB-INF'
+	}
+	
+	baseName = 'wetfeet.resteasy'
+}

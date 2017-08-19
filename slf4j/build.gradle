@@ -1,0 +1,18 @@
+apply plugin: 'eclipse'
+apply plugin: 'idea'
+apply plugin: 'java'
+apply plugin: 'application'
+
+sourceCompatibility = 1.6
+
+mainClassName = "wetfeet.slf4j.SLF4Jdemo"
+
+repositories {
+	mavenCentral ()
+}
+
+dependencies {
+	compile 'org.slf4j:slf4j-api:1.7.5'
+	runtime 'org.slf4j:slf4j-simple:1.7.5'
+}
+

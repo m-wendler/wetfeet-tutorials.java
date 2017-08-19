@@ -21,6 +21,7 @@ are being taken care of automatically (no need to download / install anything ma
 ### run the tests
 
 * clone this repo
+* `cd <repo-directory>/junit`
 * run the gradle `test` task from a console
 
     `gradle clean test`

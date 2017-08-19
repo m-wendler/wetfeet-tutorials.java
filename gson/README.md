@@ -18,7 +18,7 @@ are being taken care of automatically (no need to download / install anything ma
 ### run the demo
 
 * clone this repo
-* `cd <repo-directorx>`
+* `cd <repo-directorx>/gson`
 * run the gradle `run` task from a console
 
     `./gradlew clean run`

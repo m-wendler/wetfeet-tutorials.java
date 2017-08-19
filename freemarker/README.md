@@ -17,7 +17,7 @@ are being taken care of automatically (no need to download / install anything ma
 ### run the demo
 
 * clone/fork this repo
-* `cd <repo-directory>`
+* `cd <repo-directory>/freemarker`
 * run the gradle `run` task from a console
 
      ```./gradlew clean run```
