@@ -1,0 +1,14 @@
+apply plugin: 'java'
+apply plugin: 'application'	
+
+repositories {
+	mavenCentral ()
+}
+
+dependencies {
+	compile 'net.sourceforge.javacsv:javacsv:2.0'
+
+	testCompile 'junit:junit:4.11'
+}
+
+mainClassName = 'wetfeet.javacsv.JavaCSVdemo'
