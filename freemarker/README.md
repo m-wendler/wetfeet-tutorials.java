@@ -5,7 +5,6 @@ Demonstrates how to get started with the Freemarker template engine in about 2 m
 ### prerequisites
 
 * git 1.7.10 +
-* gradle 1.9 +
 * Java 1.7 +
 
 ### dependencies
@@ -21,7 +20,7 @@ are being taken care of automatically (no need to download / install anything ma
 * `cd <repo-directory>`
 * run the gradle `run` task from a console
 
-     ```gradle clean run```
+     ```./gradlew clean run```
 
 ___
 
