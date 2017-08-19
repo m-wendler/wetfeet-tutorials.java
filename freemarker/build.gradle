@@ -1,0 +1,15 @@
+apply plugin: 'java'
+apply plugin: 'application'	
+
+repositories {
+	mavenCentral ()
+}
+
+dependencies {
+	compile     'org.freemarker:freemarker:2.3.20'
+
+	compile     'javax.servlet:javax.servlet-api:3.0.1'
+	testCompile 'junit:junit:4.11'
+}
+
+mainClassName = 'wetfeet.freemarker.FreemarkerDemo'
