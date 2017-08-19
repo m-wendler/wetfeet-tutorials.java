@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!--
+<web-app id="WebApp_ID" version="3.0"
+		 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+         xmlns="http://java.sun.com/xml/ns/javaee"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" 
+         metadata-complete="true" >
+-->
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:web="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="3.0">
+  <display-name>Wink Demo</display-name>
+  
+  <!-- use the Wink specific servlet -->
+  <servlet>
+    <servlet-name>Wink Demo</servlet-name>
+    <servlet-class>org.apache.wink.server.internal.servlet.RestServlet</servlet-class>
+    
+    <!-- tell the servlet which application class to use -->
+    <init-param>
+      <param-name>javax.ws.rs.Application</param-name>
+      <param-value>wetfeet.rest.wink.api.rest.v1.WinkApplication</param-value>
+    </init-param>
+    <load-on-startup>1</load-on-startup>
+  </servlet>
+  
+  
+  <servlet-mapping>
+    <servlet-name>Wink Demo</servlet-name>
+    <url-pattern>/rest/*</url-pattern>
+  </servlet-mapping>
+  
+</web-app>
