@@ -1,0 +1,14 @@
+apply plugin: 'eclipse'
+apply plugin: 'idea'
+apply plugin: 'java'
+apply plugin: 'application'
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	compile 'org.eclipse.jetty:jetty-server:9.1.0.RC2'
+}
+
+mainClassName = 'wetfeet.jetty.JettyDemo'

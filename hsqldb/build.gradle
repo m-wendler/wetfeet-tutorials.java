@@ -1,0 +1,18 @@
+import org.omg.CORBA.RepositoryIdHelper;
+
+apply plugin: 'java'
+apply plugin: 'idea'
+apply plugin: 'war'
+apply plugin: 'eclipse'
+apply plugin: 'application'
+
+repositories {
+	mavenCentral ()
+}
+
+dependencies {
+	compile 'org.hsqldb:hsqldb:2.3.0'
+}
+
+mainClassName = 'wetfeet.hsqldb.HsqldbDemo'
+
