@@ -1,0 +1,18 @@
+apply plugin: 'eclipse'
+apply plugin: 'idea'
+apply plugin: 'java'
+apply plugin: 'application'
+
+sourceCompatibility = 1.7
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	compile 'org.mongodb:casbah_2.10:2.6.2'
+	
+	testCompile 'junit:junit:4.11'
+}
+
+mainClassName = 'wetfeet.mongodb.MongodbDemo'

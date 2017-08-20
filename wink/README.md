@@ -12,11 +12,11 @@ Demonstrates how to get started accessing RESTful webservices in about 5 minutes
 are being taken care of automatically (no need to download / install anything manually!) by a `build.gradle` script file as
 
 ```gradle
-	compile 'javax.ws.rs:javax.ws.rs-api:2.0'
-	compile 'org.apache.wink:wink-server:1.3.0'
-	compile 'org.apache.wink:wink-client:1.3.0'
-	compile 'org.apache.wink:wink-common:1.3.0'
-	compile 'org.apache.httpcomponents:httpclient:4.2.3'```
+compile 'javax.ws.rs:javax.ws.rs-api:2.0'
+compile 'org.apache.wink:wink-server:1.3.0'
+compile 'org.apache.wink:wink-client:1.3.0'
+compile 'org.apache.wink:wink-common:1.3.0'
+compile 'org.apache.httpcomponents:httpclient:4.2.3'```
 
 ### run the demo
 
