@@ -1,0 +1,16 @@
+	apply plugin: 'java'
+apply plugin: 'idea'
+apply plugin: 'war'
+apply plugin: 'eclipse'
+apply plugin: 'application'
+
+repositories {
+	mavenCentral ()
+}
+
+dependencies {
+	compile 'postgresql:postgresql:9.1-901.jdbc4'
+	compile 'postgresql:postgresql:9.1-901.jdbc3'
+}
+
+mainClassName = 'wetfeet.postgres.PostgresDemo'
